@@ -1,0 +1,463 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #FFFFFF;
+  background: #000000;
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 17px;
+}
+
+.main__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main__logo_number {
+  width: 15%;
+  max-width: 106px;
+}
+
+.main__logo_icon {
+  width: 20%;
+  max-width: 127px;
+  margin: 0 auto;
+  padding-right: 45px;
+}
+
+.main__food {
+  width: 196px;
+}
+
+.main__blender {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  width: 75px;
+  margin: 0 auto;
+}
+
+.main__title span {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.main__title h3 {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-top: 10px;
+}
+
+.main__about {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.main__about .technology {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main__about .technology img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about__block img {
+  width: 124px;
+}
+
+.about__block_text .about-text__benefits {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.about__block_text .about-text__block_mobile span {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.about__block_text .about-text__block_mobile .text-small {
+  font-size: 9px;
+  font-weight: normal;
+  line-height: 11px;
+}
+
+.about__block_text .about-text__block_pc {
+  display: none;
+}
+
+.about .reserve {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.nozzles {
+  margin-bottom: 70px;
+}
+
+.nozzles__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.nozzles__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.nozzles__wrapper_item {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nozzles__wrapper_item img {
+  margin: 0 auto;
+}
+
+.nozzles__wrapper_item .nozzles-img__pc {
+  display: none;
+}
+
+.whisk {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.whisk__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.whisk__wrapper_image1 {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: calc(144px + 350 * ((100vw - 320px) / 910));
+}
+
+.whisk__wrapper_image2 {
+  width: calc(143px + 350 * ((100vw - 320px) / 910));
+}
+
+.whisk__wrapper_content span {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.whisk__wrapper_content .whisk-text {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.whisk__wrapper_content .whisk-benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.whisk__wrapper_content .whisk-benefits img {
+  width: 40px;
+}
+
+.whisk__wrapper_indent {
+  margin-left: 20px;
+}
+
+.whisk__wrapper .whisk__block {
+  margin-top: 28px;
+  margin-right: 20px;
+  margin-bottom: calc(60px + 180 * ((100vw - 320px) / 910));
+  margin-left: calc(140px + 340 * ((100vw - 320px) / 910));
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 70px 0 0 0;
+  }
+  .wrapper {
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .main {
+    -ms-grid-columns: 3, 1fr;
+        grid-template-columns: 3, 1fr;
+  }
+  .main__logo {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    max-height: 110px;
+  }
+  .main__logo_number {
+    width: 100%;
+    margin-right: 40px;
+  }
+  .main__logo_icon {
+    width: 100%;
+    margin: 0 auto 0 0;
+  }
+  .main__food {
+    width: 514px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .main__blender {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 127px;
+    margin: 0 70px 0 0;
+  }
+  .main__title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  .main__title span {
+    font-size: 23px;
+  }
+  .main__title h3 {
+    font-size: 52px;
+    line-height: 72px;
+    margin-top: 27px;
+  }
+  .main__about {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .main__about .technology {
+    font-size: 25px;
+  }
+  .main__about .technology img {
+    width: 90px;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .about__block {
+    display: block;
+    margin-right: 60px;
+  }
+  .about__block:last-child {
+    margin-right: 0;
+  }
+  .about__block img {
+    width: 427px;
+    margin: 0 auto;
+  }
+  .about__block_text .about-text__benefits {
+    font-size: 23px;
+  }
+  .about__block_text .about-text__block_mobile {
+    display: none;
+  }
+  .about__block_text .about-text__block_pc {
+    display: block;
+  }
+  .about__block_text .about-text__block_pc span {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .about__block_text .about-text__block_pc p {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+  .about__block_text .about-text__block_pc .text-small {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  .about .reserve {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nozzles {
+    background-image: url(../img/nozzles/background.png);
+    background-position: 100% !important;
+    padding-top: 80px;
+    margin-bottom: 250px;
+  }
+  .nozzles__title {
+    font-size: 64px;
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .nozzles__wrapper {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .nozzles__wrapper_item {
+    font-size: 25px;
+  }
+  .nozzles__wrapper_item .nozzles-img__mobile {
+    display: none;
+  }
+  .nozzles__wrapper_item .nozzles-img__pc {
+    display: block;
+  }
+  .whisk__wrapper {
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  .whisk__wrapper_image1 {
+    top: -180px;
+    left: 0;
+    width: 658px;
+  }
+  .whisk__wrapper_image2 {
+    width: 574px;
+  }
+  .whisk__wrapper_content span {
+    font-size: 23px;
+  }
+  .whisk__wrapper_content .whisk-text {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .whisk__wrapper_content .whisk-benefits {
+    font-size: 25px;
+  }
+  .whisk__wrapper_content .whisk-benefits img {
+    width: 90px;
+  }
+  .whisk__wrapper .whisk__block {
+    margin: 110px 20px 250px 650px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .main__food {
+    width: calc(280px + 160 * ((100vw - 320px) / 910));
+  }
+  .main__blender {
+    width: calc(70px + 40 * ((100vw - 320px) / 910));
+    margin: 0 30px 0 0;
+  }
+  .main__title span {
+    font-size: 18px;
+  }
+  .main__title h3 {
+    font-size: 38px;
+    line-height: 58px;
+    margin-top: 20px;
+  }
+  .main__about .technology {
+    font-size: 18px;
+  }
+  .main__about .technology img {
+    width: 70px;
+    margin-right: 20px;
+  }
+  .about__block img {
+    width: calc(200px + 110 * ((100vw - 320px) / 910));
+  }
+  .nozzles__title {
+    font-size: 48px;
+  }
+  .nozzles__wrapper_item img {
+    width: calc(150px + 80 * ((100vw - 320px) / 910));
+  }
+}
+/*# sourceMappingURL=main.css.map */
